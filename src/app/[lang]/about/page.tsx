@@ -64,6 +64,10 @@ const techs = [
   },
 ];
 
+type Props = {
+  params: { lang: Locale };
+};
+
 export default async function AboutPage({
   params: { lang },
 }: {
