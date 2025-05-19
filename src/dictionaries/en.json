@@ -1,0 +1,81 @@
+{
+  "navigation": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "title": "Fullstack Developer & Tech Enthusiast",
+      "description": "Welcome to my digital garden where I share my journey, insights, and learnings in React, Next.js, Node.js, and React Native development.",
+      "readBlog": "Read My Blog",
+      "aboutMe": "About Me"
+    },
+    "featured": {
+      "title": "Featured Posts",
+      "description": "Explore my latest thoughts, tutorials, and insights on fullstack development",
+      "viewAll": "View All Posts"
+    },
+    "techStack": {
+      "title": "My Tech Stack",
+      "description": "Technologies and tools I use in my daily work and personal projects",
+      "frontend": "Frontend",
+      "buildingUIs": "Building beautiful UIs",
+      "backend": "Backend",
+      "poweringApps": "Powering applications",
+      "devOps": "DevOps & Tools",
+      "streamlining": "Streamlining workflows"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to my newsletter to receive updates on new articles, tutorials, and insights",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "privacy": "I respect your privacy. Unsubscribe at any time."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Thoughts, tutorials, and insights on fullstack development",
+    "search": "Search articles...",
+    "all": "All",
+    "loadMore": "Load More",
+    "categories": "Categories",
+    "popularPosts": "Popular Posts",
+    "newsletter": "Newsletter",
+    "getNotified": "Get notified about new articles",
+    "subscribe": "Subscribe"
+  },
+  "post": {
+    "author": "Author",
+    "shareArticle": "Share this article",
+    "backToBlog": "Back to Blog",
+    "aboutAuthor": "About the Author",
+    "relatedArticles": "Related Articles"
+  },
+  "about": {
+    "title": "About me",
+    "intro1": "Hello! I'm a passionate fullstack developer with expertise in React, Next.js, Node.js, and React Native. I love building elegant, efficient, and user-friendly applications that solve real-world problems.",
+    "intro2": "With over 5 years of experience in web and mobile development, I've worked on a variety of projects ranging from small business websites to complex enterprise applications. I'm constantly learning and exploring new technologies to stay at the forefront of the ever-evolving tech landscape.",
+    "intro3": "When I'm not coding, you can find me writing technical articles, contributing to open-source projects, or mentoring aspiring developers. I believe in sharing knowledge and giving back to the community that has helped me grow in my career.",
+    "contact": "Contact",
+    "email": "Email:",
+    "location": "Location:",
+    "availability": "Availability:",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "getInTouch": "Get In Touch",
+    "getInTouchDesc": "I'm always open to discussing new projects, opportunities, or partnerships. Feel free to reach out!",
+    "sendEmail": "Send Email",
+    "contactForm": "Contact Form"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "contact": "Contact"
+  },
+  "country": {
+    "brazil": "Brazil"
+  }
+}

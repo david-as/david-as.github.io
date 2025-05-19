@@ -1,0 +1,81 @@
+{
+  "navigation": {
+    "home": "Início",
+    "blog": "Blog",
+    "about": "Sobre"
+  },
+  "home": {
+    "hero": {
+      "title": "Desenvolvedor Fullstack e Entusiasta de Tecnologia",
+      "description": "Bem-vindo ao meu jardim digital onde compartilho minha jornada, insights e aprendizados em React, Next.js, Node.js e desenvolvimento React Native.",
+      "readBlog": "Ler Meu Blog",
+      "aboutMe": "Sobre Mim"
+    },
+    "featured": {
+      "title": "Posts em Destaque",
+      "description": "Explore meus últimos pensamentos, tutoriais e insights sobre desenvolvimento fullstack",
+      "viewAll": "Ver Todos os Posts"
+    },
+    "techStack": {
+      "title": "Minha Stack Tecnológica",
+      "description": "Tecnologias e ferramentas que uso no meu trabalho diário e projetos pessoais",
+      "frontend": "Frontend",
+      "buildingUIs": "Construindo interfaces bonitas",
+      "backend": "Backend",
+      "poweringApps": "Alimentando aplicações",
+      "devOps": "DevOps e Ferramentas",
+      "streamlining": "Otimizando fluxos de trabalho"
+    },
+    "newsletter": {
+      "title": "Mantenha-se Atualizado",
+      "description": "Inscreva-se na minha newsletter para receber atualizações sobre novos artigos, tutoriais e insights",
+      "placeholder": "Digite seu email",
+      "subscribe": "Inscrever-se",
+      "privacy": "Eu respeito sua privacidade. Cancele a inscrição a qualquer momento."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Pensamentos, tutoriais e insights sobre desenvolvimento fullstack",
+    "search": "Pesquisar artigos...",
+    "all": "Todos",
+    "loadMore": "Carregar Mais",
+    "categories": "Categorias",
+    "popularPosts": "Posts Populares",
+    "newsletter": "Newsletter",
+    "getNotified": "Receba notificações sobre novos artigos",
+    "subscribe": "Inscrever-se"
+  },
+  "post": {
+    "author": "Autor",
+    "shareArticle": "Compartilhar este artigo",
+    "backToBlog": "Voltar ao Blog",
+    "aboutAuthor": "Sobre o Autor",
+    "relatedArticles": "Artigos Relacionados"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "intro1": "Olá! Sou um desenvolvedor fullstack apaixonado com experiência em React, Next.js, Node.js e React Native. Adoro construir aplicações elegantes, eficientes e amigáveis que resolvem problemas do mundo real.",
+    "intro2": "Com mais de 5 anos de experiência em desenvolvimento web e mobile, trabalhei em uma variedade de projetos, desde sites para pequenas empresas até aplicações empresariais complexas. Estou constantemente aprendendo e explorando novas tecnologias para me manter na vanguarda do cenário tecnológico em constante evolução.",
+    "intro3": "Quando não estou codificando, você pode me encontrar escrevendo artigos técnicos, contribuindo para projetos de código aberto ou orientando desenvolvedores aspirantes. Acredito em compartilhar conhecimento e retribuir à comunidade que me ajudou a crescer na minha carreira.",
+    "contact": "Contato",
+    "email": "Email:",
+    "location": "Localização:",
+    "availability": "Disponibilidade:",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "education": "Educação",
+    "projects": "Projetos",
+    "getInTouch": "Entre em Contato",
+    "getInTouchDesc": "Estou sempre aberto a discutir novos projetos, oportunidades ou parcerias. Sinta-se à vontade para entrar em contato!",
+    "sendEmail": "Enviar Email",
+    "contactForm": "Formulário de Contato"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "contact": "Contato"
+  },
+  "country": {
+    "brazil": "Brasil"
+  }
+}
