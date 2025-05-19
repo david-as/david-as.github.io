@@ -13,12 +13,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   skipTrailingSlashRedirect: true,
-  exportPathMap: async function (defaultPathMap) {
-    return {
-      ...defaultPathMap,
-      '/sw.js': { page: '/sw.js' },
-    }
-  },
 };
 
 export default nextConfig;
