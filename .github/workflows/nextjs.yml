@@ -79,6 +79,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Debug folder structure
+        run: ls -la
 
   # Deployment job
   deploy:
