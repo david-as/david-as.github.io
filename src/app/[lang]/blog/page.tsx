@@ -186,10 +186,12 @@ const getBlogPosts = (lang: Locale) => {
 };
 
 export default async function BlogPage({
-  params: { lang },
+  params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
+  const respParams = await params;
+  const lang = respParams.lang;
   const { blog } = await getDictionary(lang);
   const blogPosts = getBlogPosts(lang);
 

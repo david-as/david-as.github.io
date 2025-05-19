@@ -64,15 +64,13 @@ const techs = [
   },
 ];
 
-type Props = {
-  params: { lang: Locale };
-};
-
 export default async function AboutPage({
-  params: { lang },
+  params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
+  const respParams = await params;
+  const lang = respParams.lang;
   const { about, country } = await getDictionary(lang);
 
   return (

@@ -568,10 +568,13 @@ export default function RootLayout({
 };
 
 export default async function BlogPost({
-  params: { lang, id },
+  params,
 }: {
-  params: { lang: Locale; id: string };
+  params: Promise<{ lang: Locale; id: string }>;
 }) {
+    const respParams = await params;
+  const lang = respParams.lang;
+  const id = respParams.id;
   const { post: postTranslations } = await getDictionary(lang);
   const blogPosts = getBlogPosts(lang);
 

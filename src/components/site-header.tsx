@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import LanguageSwitcher from "./language-switcher";
 
-export async function SiteHeader({ lang }: { lang: "en" | "pt" }) {
-  const { navigation } = await getDictionary(lang);
+export async function SiteHeader({ lang }: { lang?: "en" | "pt" }) {
+  const { navigation } = await getDictionary(lang || "en");
 
   return (
     <div className="fixed inset-x-0 top-10 z-50 flex justify-center">
