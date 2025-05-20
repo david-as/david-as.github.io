@@ -18,6 +18,13 @@ export function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
+export async function getStaticPaths() {
+  return {
+    paths: i18n.locales.map((lang) => ({ params: { lang } })),
+    fallback: false,
+  };
+}
+
 export default async function LocaleLayout({
   children,
   params,
