@@ -56,7 +56,7 @@ function Section({
   );
 }
 
-export default async function Home({ params }: PageProps<"/[lang]">) {
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
   const c = getContent(lang);

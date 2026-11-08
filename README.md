@@ -2,17 +2,17 @@
 
 Portfólio pessoal de David Amorim — https://david-as.github.io
 
-Next.js 16 (export estático) · React 19 · Tailwind CSS 4 · TypeScript 7 · Biome
+Next.js 16 (export estático) · React 19 · Tailwind CSS 4 · TypeScript 7 · Biome · Node 26 · pnpm 12
 
 ## Comandos
 
 ```bash
-npm install
-npm run dev        # servidor de desenvolvimento
-npm run build      # gera o site estático em ./out
-npm run lint       # Biome (lint + formatação + imports)
-npm run lint:fix   # aplica as correções do Biome
-npm run typecheck  # tsc --noEmit
+pnpm install
+pnpm dev        # servidor de desenvolvimento
+pnpm build      # gera o site estático em ./out
+pnpm lint       # Biome (lint + formatação + imports)
+pnpm lint:fix   # aplica as correções do Biome
+pnpm typecheck  # tsc --noEmit
 ```
 
 ## Conteúdo

@@ -11,7 +11,7 @@ export function generateStaticParams() {
   return i18n.locales.map((lang) => ({ lang }));
 }
 
-export async function GET(_req: Request, { params }: RouteContext<"/[lang]/og.png">) {
+export async function GET(_req: Request, { params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   const c = getContent(hasLocale(lang) ? lang : i18n.defaultLocale);
   const portrait = await readFile(join(process.cwd(), "public/myself.png"));
