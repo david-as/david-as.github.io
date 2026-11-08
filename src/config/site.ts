@@ -1,18 +1,12 @@
 export const siteConfig = {
-    name: "shadcn/ui",
-    url: "https://ui.shadcn.com",
-    ogImage: "https://ui.shadcn.com/og.jpg",
-    description:
-      "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
-    links: {
-      twitter: "https://twitter.com/shadcn",
-      github: "https://github.com/shadcn-ui/ui",
-    },
-  }
-  
-  export type SiteConfig = typeof siteConfig
-  
-  export const META_THEME_COLORS = {
-    light: "#ffffff",
-    dark: "#09090b",
-  }
+  name: "David Amorim · Software Engineer",
+  url: "https://david-as.github.io",
+  description: "Software Engineer focused on React, Next.js, TypeScript and NestJS.",
+};
+
+export type SiteConfig = typeof siteConfig;
+
+export const META_THEME_COLORS = {
+  light: "#ffffff",
+  dark: "#020817",
+};

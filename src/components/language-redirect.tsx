@@ -1,17 +1,17 @@
-'use client'
+"use client";
 
-import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
-import { redirectToLocale } from '@/lib/language'
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+import { redirectToLocale } from "@/lib/language";
 
 export default function LanguageRedirect() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   useEffect(() => {
     if (pathname) {
-      redirectToLocale(pathname)
+      redirectToLocale(pathname);
     }
-  }, [pathname])
+  }, [pathname]);
 
-  return null
+  return null;
 }

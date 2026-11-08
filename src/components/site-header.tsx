@@ -1,70 +1,49 @@
+import Link from "next/link";
 import { ModeSwitcher } from "@/components/mode-switcher";
 import { MyLogo } from "@/components/my-logo";
-import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/lib/dictionary";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { getContent } from "@/content/profile";
+import type { Locale } from "@/i18n.config";
 import LanguageSwitcher from "./language-switcher";
 
-export async function SiteHeader({ lang }: { lang?: "en" | "pt" }) {
-  const { navigation } = await getDictionary(lang || "en");
+export function SiteHeader({ lang }: { lang: Locale }) {
+  const { nav } = getContent(lang);
+  const items = [
+    { href: "#about", label: nav.about },
+    { href: "#projects", label: nav.projects },
+    { href: "#experience", label: nav.experience },
+    { href: "#stack", label: nav.stack },
+    { href: "#contact", label: nav.contact },
+  ];
 
   return (
-    <div className="fixed inset-x-0 top-10 z-50 flex justify-center">
-      <nav className="flex items-center gap-0.5 p-2 rounded-xl border-b border-border/40 bg-transparent  backdrop-blur-sm supports-[backdrop-filter]:bg-blue-500/10 dark:border-border w-80 justify-between">
-        {/* <Button variant="ghost" size="icon" className="h-8 w-8 px-0">
-          <Link
-            href={"https://github.com/david-as/"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Icons.gitHub className="h-4 w-4" />
-            <span className="sr-only">GitHub</span>
-          </Link>
-        </Button> */}
-        <Button variant="ghost" size="icon" className="h-8 w-8 px-0">
-          <Link href={`/${lang}`}>
-            <MyLogo className="h-6 w-6" />
-            <span className="sr-only">GitHub</span>
-          </Link>
-        </Button>
-        <div className="space-x-1">
-          <Button
-            variant="ghost"
-            className={cn(
-              "backdrop-blur-sm supports-[backdrop-filter]:bg-blue-500/20 bg-accent/80 text-accent-foreground rounded-full px-6 h-fit py-2"
-            )}
-          >
-            <Link
-              href={`/${lang}`}
-              className="text-sm font-medium transition-colors hover:text-primary"
-            >
-              {navigation.home}
-            </Link>
-          </Button>
-          {/* <Link
-          href={`/${lang}/blog`}
-          className="text-sm font-medium transition-colors hover:text-primary"
+    <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
+      <nav className="flex w-full max-w-2xl items-center justify-between gap-2 rounded-full border border-border/60 bg-background/60 p-1.5 shadow-lg shadow-primary/5 backdrop-blur-xl supports-backdrop-filter:bg-background/50">
+        <Link
+          href={`/${lang}`}
+          className="grid size-9 place-items-center rounded-full text-foreground transition-colors hover:bg-primary/10"
         >
-          {navigation.blog}
-        </Link> */}
-          <Button
-            variant="ghost"
-            className="backdrop-blur-sm supports-[backdrop-filter]:bg-blue-500/20 bg-accent/80 text-accent-foreground rounded-full px-6 h-fit py-2"
-          >
-            <Link
-              href={`/${lang}/about`}
-              className="text-sm font-medium transition-colors hover:text-primary"
-            >
-              {navigation.about}
-            </Link>
-          </Button>
-        </div>
-        <div className="space-x-1">
-          <ModeSwitcher />
+          <MyLogo className="size-6 fill-current" />
+          <span className="sr-only">David Amorim</span>
+        </Link>
+
+        <ul className="hidden items-center gap-1 sm:flex">
+          {items.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className="rounded-full px-3 py-2 text-sm md:px-4 font-medium text-muted-foreground transition-colors hover:bg-primary/10 hover:text-foreground"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex items-center gap-0.5">
           <LanguageSwitcher />
+          <ModeSwitcher />
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
